@@ -46,6 +46,7 @@ public class NumbersArray {
     public static Integer[] findUnique(Integer[] arr) {
         HashMap<Integer, Integer> count = new HashMap<>();
 
+        //map for int, count
         for (Integer x : arr) {
             count.put(x, count.getOrDefault(x, 0) + 1);
         }
